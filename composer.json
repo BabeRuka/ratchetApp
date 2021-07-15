@@ -1,27 +1,32 @@
 {
-  "name":"BabeRuka/ratchetApp",
-  "type": "library",
-  "description":"PHP / JavaScript websocket app using ratchet",
-  "keywords": ["WebSockets", "Server", "Ratchet", "Sockets", "WebSocket"],
-  "license": "MIT",
-  "authors": [
-        {
-            "name": "Solomon Bareebe",
-            "email": "baberuka@mail.com",
-            "homepage": "https://oaas.co.za",
-            "role": "Developer"
-        } 
-    ],
-"autoload": {
-    "psr-0": {
-      "ratchetApp\\": "src"
-    }
-  },
-  "require": {
-    "cboden/ratchet": "^0.4"
-  },
-   "require-dev": {
-        "phpunit/phpunit": "~4.8"
-    }
-  
+   "name":"baberuka/ratchetapp",
+   "type":"library",
+   "description":"PHP / JavaScript websocket app using ratchet",
+   "keywords":[
+      "WebSockets",
+      "Server",
+      "Ratchet",
+      "Sockets",
+      "WebSocket"
+   ],
+   "license":"MIT",
+   "authors":[
+      {
+         "name":"Solomon Bareebe",
+         "email":"baberuka@mail.com",
+         "homepage":"https://oaas.co.za",
+         "role":"Developer"
+      }
+   ],
+   "autoload":{
+      "psr-0":{
+         "ratchetApp\\":"src"
+      }
+   },
+   "require":{
+      "cboden/ratchet":"^0.4"
+   },
+   "require-dev":{
+      "phpunit/phpunit":"~4.8"
+   }
 }
