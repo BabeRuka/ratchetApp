@@ -11,7 +11,7 @@
             "homepage": "https://oaas.co.za",
             "role": "Developer"
         } 
-    ]
+    ],
 "autoload": {
     "psr-0": {
       "ratchetApp\\": "src"
