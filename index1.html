@@ -1,0 +1,27 @@
+<html>
+<head>
+		<style>
+            input, button { padding: 10px; }
+        </style>
+</head>
+<body>
+	<input type="text" id="message" autocomplete="off" />
+    <button onclick="transmitMessage()">Send</button>
+	<br />
+	<div id="msg_data"></div>
+    <script>
+            var conn = new WebSocket('ws://localhost:8080');
+            conn.onopen = function(e) {
+                console.log("Connection established!");
+            };
+            function transmitMessage() {
+                conn.send( message.value );
+                document.getElementById('msg_data').innerHTML += '<div class="width:100%; margin: auto;">'+message.value+' :-(</div>';
+            }
+            conn.onmessage = function(e) {
+                document.getElementById('msg_data').innerHTML += '<div class="width:100%; margin: auto;">'+e.data+' :-)</div>';
+            };
+    </script>
+
+</body>
+</html>
