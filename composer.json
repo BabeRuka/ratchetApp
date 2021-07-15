@@ -1,4 +1,5 @@
-"name":"BabeRuka/ratchetApp",
+{
+	"name":"BabeRuka/ratchetApp",
     "description":"PHP / JavaScript websocket app using ratchet",
     "require":{
         "cboden/ratchet": "^0.4"
