@@ -1,6 +1,6 @@
 <?php
 require_once("vendor/autoload.php");
-namespace ratchetApp;
+namespace RatchetApp;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 
